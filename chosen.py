@@ -105,7 +105,7 @@ class ChosenWidgetMixin(object):
     def render_option(self, selected_choices, option_value, option_label, bool_field):
         option_value = force_text(option_value)
         if option_value in selected_choices:
-            selected_html = mark_safe(' selected="selected"')
+            selected_html = mark_safe('selected="selected"')
             if not self.allow_multiple_selected:
                 selected_choices.remove(option_value)
         else:
